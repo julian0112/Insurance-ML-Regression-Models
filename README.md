@@ -29,7 +29,7 @@ First we check the information and a snippet of the data, we can see that the co
   <i>Figure 2: dataset snippet</i>
 </div>
 
-Now when checkin for the distribution of the charges data we can see that it is not normalized, if we check it using the Shapiro Test it give us a value of around <b>1.90e-36</b>, to try and correct that there are two changes that we are going to apply to our target, we are going
+Now when checking for the distribution of the charges data we can see that it is not normalized, if we check it using the Shapiro Test it give us a value of around <b>1.90e-36</b>, to try and correct that there are two changes that we are going to apply to our target, we are going
 to apply the method <b>Winsorize</b> from Sci-Py and then apply the Yeo-Johnson Transformation, this two change are going to be applied in this case to the whole target just for the plot, later we are going to apply them but just to the y_train. This give us Shapiro Test Score of around <b>2.08e-16</b>, this is a more normal distribution, but not a perfect one, there are methods like Quantile Transformer from SKLearn that
 makes the Shapiro Test Score 0.001, but in this case, the Yeo-Johnson Tranformation gives us a better R² and RMSE Score when writting our model. We can see the distribution of the charges data before and after the Yeo-Johnson Tranformation in Figure 3. :<br><br>
 
