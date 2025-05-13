@@ -29,9 +29,8 @@ First, we check the information and a snippet of the data, we can see that the c
   <i>Figure 2: dataset snippet</i>
 </div>
 
-Now when checking for the distribution of the charges data we can see that it is not normalized, if we check it using the Shapiro Test it give us a value of around <b>1.90e-36</b>, to try and correct that there are two changes that we are going to apply to our target, we are going
-to apply the method <b>Winsorize</b> from Sci-Py and then apply the Yeo-Johnson Transformation, this two change are going to be applied in this case to the whole target just for the plot, later we are going to apply them but just to the y_train. This give us Shapiro Test Score of around <b>2.08e-16</b>, this is a more normal distribution, but not a perfect one, there are methods like Quantile Transformer from Scikit-Learn that
-makes the Shapiro Test Score 0.001, but in this case, the Yeo-Johnson Transformation gives us a better R² and RMSE Score when writing our model. We can see the distribution of the charges data before and after the Yeo-Johnson Transformation in Figure 3. :<br><br>
+Now when checking for the distribution of the charges data we can see that it is not normalized, if we check it using the Shapiro Test it give us a value of around <b>1.90e-36</b>, to try and correct that there are two changes that we are going to apply to our target, we are going to apply the method <b>Winsorize</b> from Sci-Py and then apply the Yeo-Johnson Transformation, this two change are going to be applied in this case to the whole target just for the plot, later we are going to apply them but just to the y_train. This give us Shapiro Test Score of around <b>2.08e-16</b>, this is a more normal distribution, but not a perfect one, there are methods like Quantile Transformer from Scikit-Learn that
+makes the Shapiro Test Score 0.001, but in this case, the Yeo-Johnson Transformation gives us a better R² and RMSE Score when writing our model. We can see the distribution of the charges data before and after the Yeo-Johnson Transformation in Figure 3.<br><br>
 
 <div align="center">
 
@@ -43,7 +42,7 @@ makes the Shapiro Test Score 0.001, but in this case, the Yeo-Johnson Transforma
 <h2>Insights</h2>
 First by checking the correlation of the parameters with our target column, as seen in Figure 4, we can see that the feature with the biggest correlation is whether or not the beneficiary is a smoker, followed by the age and BMI of the beneficiary. This tells us that the age and
 smoking habits of the person affects in some way how much they pay for insurance, to check that we made violin plot of the charges and the different age groups according to smoking habits, as seen in Figure 5. We can see that in all age groups the cost of the people that don't
-smoke is a lot less than the ones that do. :<br><br>
+smoke is a lot less than the ones that do.<br><br>
 <div align="center">
 
   ![Correlation Heatmap](https://github.com/user-attachments/assets/0d84da39-0e41-4d16-8f1e-9f7fae378219)
