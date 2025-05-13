@@ -87,7 +87,7 @@ We also decided to make a base model (Linear Regression Model without the Polyno
   <li type="disc">R² Linear Regression: 0.685</li>
   <li type="disc">RMSE Linear Regression: 6994.30 USD</li>
 </ul>
-As we can see thew Ridge Model gives us a improvement of 26% in the R² Score and compared to the 34.7% of deviation of the Ridge Model, the base model gives us a 52.7%, this means that there is a reduction of 18% of the relative deviation and of 34.2% in the RMSE, we can visualize
+As we can see the Ridge Model gives us a improvement of 26% in the R² Score and compared to the 34.7% of deviation of the Ridge Model, the base model gives us a 52.7%, this means that there is a reduction of 18% of the relative deviation and of 34.2% in the RMSE, we can visualize
 this in the Figure 7. Finally we can see the results of the Ridge Model in the Figure 8.<br><br>
 
 <div align="center">
@@ -103,4 +103,4 @@ this in the Figure 7. Finally we can see the results of the Ridge Model in the F
 </div>
 
 <h2>Next Steps and Improvements</h2>
-We could investigate better ways to normalize the data for the target value and try other regression models such as RD Regression, Bayesian Ridge or XGBoost.
+We could investigate better ways to normalize the data for the target value and try other regression models such as ARD Regression, Bayesian Ridge or XGBoost.
